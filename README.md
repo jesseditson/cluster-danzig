@@ -5,7 +5,7 @@
 
 By default, a Cluster master process will close it's workers if told to exit.
 
-However, if sent a <SIGKILL>, it seems that the master process will shut down, but the children will continue to live.
+However, if sent a SIGKILL, it seems that the master process will shut down, but the children will continue to live.
 
 This is an issue, because ops guys *hate* killing zombies, but when things go wrong, you'll be in a confusing mess unless your sysadmin is [Rick Grimes]("http://en.wikipedia.org/wiki/Rick_Grimes" "Rick Grimes").
 
